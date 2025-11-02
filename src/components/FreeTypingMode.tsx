@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { ControlBar } from './ControlBar';
 import { getPhonic, getPhonicData, getEmoji, isNumber } from '../utils/phonics';
 import { speak } from '../utils/audio';
@@ -94,7 +94,7 @@ export function FreeTypingMode({ difficulty, muted, onMuteToggle }: { difficulty
       {/* Control Bar - no difficulty selector in free typing */}
       <ControlBar
         difficulty={difficulty}
-        onDifficultyChange={(newDiff) => {
+        onDifficultyChange={() => {
           // Difficulty doesn't affect free typing mode
         }}
         muted={muted}

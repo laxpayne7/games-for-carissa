@@ -1,4 +1,3 @@
-import React from 'react';
 import { SpeakerWaveIcon, SpeakerXMarkIcon } from '@heroicons/react/24/solid';
 import type { Difficulty } from '../utils/storage';
 

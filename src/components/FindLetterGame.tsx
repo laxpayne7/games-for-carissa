@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { LetterCard } from './LetterCard';
 import { BigKey } from './BigKey';
 import { ControlBar } from './ControlBar';

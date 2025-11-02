@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ModeToggle, type GameMode } from './components/ModeToggle';
 import { FindLetterGame } from './components/FindLetterGame';
 import { FreeTypingMode } from './components/FreeTypingMode';
