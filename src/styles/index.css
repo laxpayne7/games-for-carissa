@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-warm-yellow via-warm-orange to-warm-pink;
+    @apply min-h-screen;
+    @apply font-sans;
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .tap-target {
+    @apply min-h-[56px] min-w-[56px];
+  }
+
+  .bubble-button {
+    @apply tap-target;
+    @apply rounded-2xl;
+    @apply shadow-xl;
+    @apply transition-all;
+    @apply duration-200;
+    @apply active:scale-95;
+    @apply focus:outline-none;
+    @apply focus:ring-4;
+    @apply focus:ring-warm-yellow;
+  }
+}
