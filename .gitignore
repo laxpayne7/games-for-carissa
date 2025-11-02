@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Security - never commit tokens
+.github_token
+.github_token.txt
+token.txt
+*.token
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
